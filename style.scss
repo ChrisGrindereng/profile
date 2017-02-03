@@ -41,6 +41,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family: 'Gill Sans MT';
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -208,20 +209,21 @@ body {
   }
 }
 .linkedin{
-    border-radius:5px 5px;
+    border-radius:20%;
     width: 40px;
 }
 .github{
     background-color: white;
-    border-radius:5px 5px;
+    border-radius:20%;
     width: 40px;
 }
-.facebook{
-    border-radius:5px 5px;
+.email{
+    border-radius:20%;
     width: 40px;
+    
 }
     
-    
+   
 
 .jumbotron {
     background-color: lightsteelblue;
@@ -238,20 +240,28 @@ body {
 }
 .description{
     font-size: medium;
+    
 }
 .skills{
     background-color: aliceblue;
     color: black;
     padding-bottom: 48px;
-    padding-top: 48px;
-
+    padding-top: 48px;  
 }
+
+.bttmIcons{
+    border-radius: 20%;
+    width: 100px;
+    background-color: white;
+}
+
 /* for Scrolling quotes */
 /* carousel */
 #quote-carousel 
 {
   padding: 30px 30px 30px 30px;
   margin-top: 30px;
+  font-style: italic;
 }
 
 /* Control buttons  */
