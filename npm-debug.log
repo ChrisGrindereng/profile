@@ -2,26 +2,48 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'run',
-1 verbose cli   'watcher' ]
-2 info using npm@3.10.3
-3 info using node@v6.7.0
-4 verbose stack Error: missing script: watcher
-4 verbose stack     at run (C:\Program Files\nodejs\node_modules\npm\lib\run-script.js:151:19)
-4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\run-script.js:61:5
-4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:356:5
-4 verbose stack     at checkBinReferences_ (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:320:45)
-4 verbose stack     at final (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:354:3)
-4 verbose stack     at then (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:124:5)
-4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:243:12
-4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
-4 verbose stack     at tryToString (fs.js:455:3)
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
-5 verbose cwd C:\Users\cog04\tiy\profile
-6 error Windows_NT 10.0.14393
-7 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "watcher"
-8 error node v6.7.0
-9 error npm  v3.10.3
-10 error missing script: watcher
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+1 verbose cli   'watch' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info lifecycle CHANGEME@1.0.0~prewatch: CHANGEME@1.0.0
+6 silly lifecycle CHANGEME@1.0.0~prewatch: no script for prewatch, continuing
+7 info lifecycle CHANGEME@1.0.0~watch: CHANGEME@1.0.0
+8 verbose lifecycle CHANGEME@1.0.0~watch: unsafe-perm in lifecycle true
+9 verbose lifecycle CHANGEME@1.0.0~watch: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\cog04\tiy\profile\node_modules\.bin;C:\Users\cog04\bin;C:\Users\cog04\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\local\bin;C:\Users\cog04\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\cog04\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\cog04\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\cog04\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\cog04\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\cog04\AppData\Local\Apps\2.0\40PG9K2Y.C00\CBY9D020.1W6\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\cog04\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit;C:\Program Files\nodejs;C:\Program Files\dotnet;C:\Users\cog04\.dnx\bin;C:\Users\cog04\AppData\Local\atom\bin;C:\Users\cog04\AppData\Local\Microsoft\WindowsApps;C:\Users\cog04\AppData\Local\GitHubCLI\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\cog04\AppData\Roaming\npm;C:\Program Files (x86)\MSBuild\14.0\bin;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\x64;C:\Program Files (x86)\Microsoft SDKs\F#\4.0\Framework\v4.0;C:\Users\cog04\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin\vendor_perl;C:\Users\cog04\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin\core_perl
+10 verbose lifecycle CHANGEME@1.0.0~watch: CWD: C:\Users\cog04\tiy\profile
+11 silly lifecycle CHANGEME@1.0.0~watch: Args: [ '/d /s /c',
+11 silly lifecycle   'postcss --use autoprefixer --autoprefixer.browsers "last 50 versions" --use precss --use postcss-calc --use csswring -w -o style.css style.scss' ]
+12 silly lifecycle CHANGEME@1.0.0~watch: Returned: code: 1  signal: null
+13 info lifecycle CHANGEME@1.0.0~watch: Failed to exec watch script
+14 verbose stack Error: CHANGEME@1.0.0 watch: `postcss --use autoprefixer --autoprefixer.browsers "last 50 versions" --use precss --use postcss-calc --use csswring -w -o style.css style.scss`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid CHANGEME@1.0.0
+16 verbose cwd C:\Users\cog04\tiy\profile
+17 error Windows_NT 10.0.14393
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "watch"
+19 error node v6.10.0
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error CHANGEME@1.0.0 watch: `postcss --use autoprefixer --autoprefixer.browsers "last 50 versions" --use precss --use postcss-calc --use csswring -w -o style.css style.scss`
+22 error Exit status 1
+23 error Failed at the CHANGEME@1.0.0 watch script 'postcss --use autoprefixer --autoprefixer.browsers "last 50 versions" --use precss --use postcss-calc --use csswring -w -o style.css style.scss'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the CHANGEME package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     postcss --use autoprefixer --autoprefixer.browsers "last 50 versions" --use precss --use postcss-calc --use csswring -w -o style.css style.scss
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs CHANGEME
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls CHANGEME
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

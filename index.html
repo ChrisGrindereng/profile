@@ -7,32 +7,31 @@
     <link rel="preload" href="./images/IMG_0398.JPG" as="image">
 </head>
 <body>
+    <!--Nav bar and Home banner-->
     <div class="site-wrapper">
-
         <div class="site-wrapper-inner">
-
             <div class="cover-container">
-
-                <div class="masthead clearfix">
+                <!--NavBar-->
+                <div class="masthead clearfix navbar-shrink">
                     <div class="inner">
                         <h3 id ="home"class="masthead-brand"></h3>
                         <nav>
                             <ul class="nav masthead-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#resume">Resume</a></li>
+                                <li ><a class="card card-menu" href="#home">Home</a></li>
+                                <li ><a class="card card-menu" href="#about">About</a></li>
+                                <li><a class="card card-menu" href="#projects">Projects</a></li>
+                                <li><a class="card card-menu" href="#resume">Resume</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-
+                <!--Home Banner-->
                 <div class="inner cover">
-                    <h1 class="cover">Hi, I'm Chris,</h1>
-                    <p class="cover">A Software Developer</p>
+                    <h1 class="cover">Chris Grindereng</h1>
+                    <p class="cover">Software Developer</p>
                     <p class="cover"><a class="btn btn-default" href="#about" role="button">Learn more</a></p>
                 </div>
-
+                <!--Fixed footer Icons-->
                 <div class="mastfoot">
                     <div class="inner">
                         <p>
@@ -52,17 +51,14 @@
                         </p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
+    <!--About Me Section-->
     <div class="jumbotron">
         <div class="container">
             <p class="lead">
-                <img class="round" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgyAAAAJDliMGI1MGE4LWEyMTEtNGZhNy04ZThlLWQxMjVmMTVhYzhjMA.jpg" />
+                <img class="round" src="./images/me.jpg" />
             </p>
              <h1 id="about"> About Me</h1>
             <p class="description">As a lover of knowledge, I devoted myself to learning computer programming after previously working in IT for eight years. My current experience with ASP.NET has displayed the innumerous possibilities available with today’s technological platforms. Continuing my coding journey, I look to explore advanced computer science concepts and functional programming. </p>
@@ -70,12 +66,13 @@
         </div>
     </div>
     <div class="container">
-  <div class="row">
-    <div class='col-md-offset-2 col-md-8 text-center'>
-    <!--<h2></h2>-->
-    </div>
-  </div>
-  <div class='row'>
+        <div class="row">
+        <div class='col-md-offset-2 col-md-8 text-center'>
+        <!--<h2></h2>-->
+        </div>
+        </div>
+    <div class='row'>
+    <!--Quotes-->
     <div class='col-md-offset-2 col-md-8'>
       <div class="carousel slide" data-ride="carousel" id="quote-carousel">
         <!-- Bottom Carousel Indicators -->
@@ -84,10 +81,8 @@
           <li data-target="#quote-carousel" data-slide-to="1"></li>
           <li data-target="#quote-carousel" data-slide-to="2"></li>
         </ol>
-        
         <!-- Carousel Slides / Quotes -->
         <div class="carousel-inner">
-        
           <!-- Quote 1 -->
           <div class="item active">
             <blockquote>
@@ -133,23 +128,22 @@
               </div>
             </blockquote>
           </div>
-        </div>
-        
+        </div>  
         <!-- Carousel Buttons Next/Prev -->
         <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
         <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
       </div>                          
     </div>
-  </div>
-</div>
-
+    </div>
+    </div>
     <!--Skills Section-->
     <div class="skills">
+
         <div class="container">
             <h1 id="skillshead">Skills</h1>
             <!--Row of columns -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 skill-colom">
                     <h2 class="skillType" style="text-decoration: underline;">Languages</h2>                    
                         <p class="skill">C#</p>
                         <p class="skill">JavaScript</p>
@@ -157,14 +151,16 @@
                         <p class="skill">CSS</p>
                         <p class="skill">SQL</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 skill-colom">
                     <h2 class="skillType" style="text-decoration: underline;">Frameworks</h2>
+                        
                         <p class="skill">Asp.Net</p>
                         <p class="skill">.Net Core</p>
+                        <p class="skill">Jquery</p>
                         <p class="skill">React</p>
                         <p class="skill">Bootstrap</p>
                 </div>     
-                <div class="col-md-4">
+                <div class="col-md-4 ">
                     <span class="pt-icon-key-tab"></span>
                     <h2 class ="skillType" style="text-decoration: underline;">Dev Tools</h2>
                         <p class="skill">Visual Studio</p>
@@ -175,29 +171,63 @@
             </div>
         </div>
     </div>
-            <div class="container">
-                <!--Row of columns -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <h2 id="projects">Projects</h2>
-                        <p><a class="bttmIcons" href="https://github.com/ChrisGrindereng"><img class="bttmIcons" src="https://make.wordpress.org/mobile/files/2013/04/GitHub-Mark-64px.png" /></a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2 id="contact">Contact Me</h2>
-                        <p><a class="bttmIcons" href="mailto:chris.grindereng@gmail.com"><img class="bttmIcons" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT98c5vXiNrdXHrbsxgYjPoy5o001bqoIZOzjg474O9eUdis_4u8g" /></a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2 id="resume">Resume</h2>
-                        <p><a class="bttmIcons" href="./CV-ChristopherGrinderengSD.pdf"><img class="bttmIcons" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaY7q5pciMRfxIPq6PYJGKeixa-FJk1XtUVEgM3V4Dpr4G4FcMow" /></a></p>
-                    </div>
-                </div>
 
-                <hr>
+<!--Break-->
+    <div class="filler">   
+        <img src="./images/digital.jpg" />
+    </div>
 
-                <footer>
-                    <p>&copy;2017 All Rights Reserved</p>
-                </footer>
+<!--Projects-->
+    <div class="project-container">
+        <div class="projects">
+        <h1 #="skillshead">My Work</h1> 
+    <!--Allergy Site-->
+            <div class="card card-medium card-2">
+                <a href="http://allergistswebsite.apphb.com/">
+                    <img class="card-img-top" src="./images/AllergySiteHome1.png" />
+                    <div class="card-block">
+                        <h4 class="card-title">Physician's Website and Portal</h4>
+                    </div>
+                </a>
+        </div>
+    <!--Interstellar-->
+            <div class="card card-medium card-2">
+                <a href="http://interstellarfinancingportal.apphb.com/">
+                    <img class="card-img-top" src="./images/InterstellarHomeScreen.png" />
+                    <div class="card-block">
+                        <h4 class card-title>Interstellar Energy Financing Portal</h4>
+                    </div>
+                </a>
             </div>
+        </div>
+    </div>
+<!--Contact-->
+    <div class="container">
+        <!--Row of columns -->
+        <div class="row">
+        <!--Projects-->
+            <div class="col-md-4">
+                <h2 id="projects">GitHub</h2>
+                <p><a class="bttmIcons" href="https://github.com/ChrisGrindereng"><img class="bttmIcons" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" /></a></p>
+            </div>
+        <!--Contact-->
+            <div class="col-md-4">
+                <h2 id="contact">Contact Me</h2>
+                <p><a class="bttmIcons" href="mailto:chris.grindereng@gmail.com"><img class="bttmIcons" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqfoYM4BlDyAZNvyHcF2ZF4typCq6y_qqEYjN28hXzQYCEjruq" /></a></p>
+            </div>
+        <!--Resume-->
+            <div class="col-md-4">
+                <h2 id="resume">Resume</h2>
+                <p><a class="bttmIcons" href="./CV-ChristopherGrinderengSD.pdf"><img class="bttmIcons" src="./images/Resume.png" /></a></p>
+            </div>
+        </div>
+    
+    <hr/>
+    <!--Footer-->
+    <footer>
+        <p>&copy;2017 All Rights Reserved</p>
+    </footer>
+    </div>         
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

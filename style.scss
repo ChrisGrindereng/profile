@@ -21,10 +21,10 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: deepskyblue;
+  
 }
 
 
@@ -56,6 +56,7 @@ body {
   animation: delay 10s;
   animation: fadein 8s;
 }
+
 @keyframes delay{
     from { opacity: 0; }
     to   { opacity: 0; }
@@ -92,11 +93,11 @@ body {
 }
 
 .masthead-nav > li {
-  
+    vertical-align: top;
     display: inline-block;
 }
 .masthead-nav > li + li {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
@@ -105,13 +106,11 @@ body {
   font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  background-color: deepskyblue;
+  color: #fff;
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -130,9 +129,7 @@ body {
 }
 
 
-/*
- * Cover
- */
+/*Cover*/
 
 .cover {
   padding: 0 20px;
@@ -144,9 +141,7 @@ body {
 }
 
 
-/*
- * Footer
- */
+/*Footer*/
 
 .mastfoot {
   color: #999; /* IE8 proofing */
@@ -158,13 +153,11 @@ body {
   
 }
  .inner {
-  padding:30px;
+  padding:15px;
 }
 
 
-/*
- * Affix and center
- */
+/*Affix and center*/
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
@@ -211,31 +204,48 @@ body {
     border-radius:20%;
     width: 40px;
 }
+.linkedin:hover{
+  width:45px;
+}
 .github{
     background-color: white;
     border-radius:20%;
     width: 40px;
 }
+.github:hover{
+  width:45px;
+}
 .email{
     border-radius:20%;
     width: 40px;
-    
+}
+.email:hover{
+  width: 45px;
 }
     
-   
+
 
 .jumbotron {
-    background-color: lightsteelblue;
+    background-color: aliceblue;
     color: black;
     margin-bottom: 0px;
-    
+    display: inline-block;
+    width: 100%;
 }
+.jumbotron p{
+  padding-right: 10px;
+}
+
 .lead img {
-    border-radius:180px;
+    width: 25%;
+    border-radius:25px;
+    float: left;
+    margin: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 #about{
-    font-size:50px;
+    font-size:50px 
 }
 .description{
     font-size: medium; 
@@ -247,9 +257,15 @@ body {
     padding-bottom: 48px;
     padding-top: 48px;  
 }
+
 #skillshead{
     font-size: 50px;
 }
+
+.skill-colom{
+  border-right: 1px solid black;
+}
+
 /*for future double underline*/
 /*.skillType{
     border-bottom: 5px solid black;
@@ -260,10 +276,12 @@ body {
 }
 
 .bttmIcons{
-    border-radius: 20%;
+    border-radius: 5%;
     width: 100px;
     background-color: white;
+    height: 100px
 }
+
 
 /* for Scrolling quotes */
 /* carousel */
@@ -365,4 +383,93 @@ body {
         width: 20px;
         height: 20px;
     }
+}
+/* Projects */ 
+
+.project-container {
+  background-color: aliceblue;
+  color: black;
+}
+
+.projects{
+    margin: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*card classes*/ 
+
+.card{
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 5px 5px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 31%;
+  text-align: center; 
+}
+.card-img-top {
+width: 100%;
+height: 200px;
+border-radius: 5px 5px;
+}
+.card-img-left{
+    float: left;
+    border-radius: 5px 5px;
+    margin: 10px;
+}
+.card-1{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-2:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-menu{
+    width: 75px;
+    background-color: skyblue;
+    opacity: .75;
+}
+.card-menu a{
+  opacity: 1;
+}
+
+.card-menu:hover{
+  opacity: 1;
+  background-color: skyblue;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.colom-list{
+    list-style: none;
+    margin-left: -40px;    
+}
+
+.card-large{
+    width: 100%;
+    text-align: left;
+}
+
+.card-medium{
+    width: 400px;
+    text-align: center;
+    margin: 30px;
+}
+
+.card-medium a{
+  color: black;
+}
+
+.filler{
+  height: 95px; 
+}
+.filler img{
+  width: 100%;
 }
