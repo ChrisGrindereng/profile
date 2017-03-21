@@ -38,7 +38,7 @@ body {
   background-color: #333;
 }
 body {
-  color: gold;
+  color: lightsteelblue;
   text-align: center;
   font-family: "Source Sans Pro","Helvetica Neue","Helvetica","Arial","sans-serif";
 }
@@ -83,11 +83,18 @@ body {
 
 /* Padding for spacing */
 
-
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+}
 
 /*
  * Header
  */
+
+/*
+ *Navbar
+*/
+
 .masthead{
     right: 0;
 }
@@ -112,11 +119,11 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: gold;
+  color: lightsteelblue;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  background-color: deepskyblue;
+  background-color: #333;
   color: #fff;
 }
 .masthead-nav > .active > a,
@@ -141,6 +148,13 @@ body {
 .cover {
   padding: 0 20px;
   font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+.cover > p > a:hover,
+.cover > p > a:focus{
+  text-decoration: none;
 }
 
 .card-btn{
@@ -187,7 +201,7 @@ body {
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
-    text-align:left;
+    text-align:center;
   }
   /* Handle the widths */
   .masthead,
@@ -232,22 +246,35 @@ body {
     
 
 
+/*
+ *About
+ */
+
 .jumbotron {
-    background-color: dodgerblue;
-    color: indigo;
+    background-color: lightsteelblue;
+    color: black;
     margin-bottom: 0px;
     display: inline-block;
     width: 100%;
-}
-.jumbotron p{
-  padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.lead img {
+.jumbotron p{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+
+}
+
+.jumbotron img {
     width: 25%;
     border-radius:25px;
     float: left;
-    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 110px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -256,32 +283,56 @@ body {
     font-weight: bold; 
 }
 .description{
-    font-size: medium; 
+    font-size: 21px; 
 }
 
+.descriptionHead{
+  font-size: 27px;
+}
+
+
 .skills{
-    background-color: lightsteelblue;
-    color: indigo;
+    color: lightsteelblue;
+    padding-bottom: 40px;
+    padding-top: 40px; 
+    background-image: url("./images/IMG_179081Slate.jpg");
+
+}
+
+#skillsHead{
+    font-size: 40px;
+    margin-top: 30px;
+    color: silver;
+}
+
+/*
+ *Services
+*/
+
+.services{
+    background-color: white;
+    color: #333;
     padding-bottom: 40px;
     padding-top: 40px;  
 }
 
-#skillshead{
+#servicesHead{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 40px;
 }
 
 .skill-colom{
-  border-right: 1px solid black;
+  border-right: 1px solid #333;
 }
 
-/*for future double underline*/
-/*.skillType{
-    border-bottom: 5px solid black;
-}*/
 .header-padding{
   padding-top: 40px;
+  
+}
+
+.skillType{
+  margin-bottom: 20px;
 }
 
 .skill{
@@ -294,7 +345,11 @@ body {
     background-color: white;
     height: 65px
 }
-
+.skillsIconData{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
 .skillsIcons{
     width: 85px;
     height: 85px
@@ -305,8 +360,7 @@ body {
 /* carousel */
 
 .quote-carousel-container{
-  background-image: url("./images/blueTexture.jpg");
-  background-color: navy;
+  background-image: url("./images/IMG_179081Brown.jpg");
 }
 #quote-carousel 
 {
@@ -362,16 +416,13 @@ body {
 .item blockquote {
     border-left: none; 
     margin: 0;
-    height: 100px;
+    height: 150px;
     font-size: 22px;
 }
 
 .item blockquote img {
     margin-bottom: 10px;
 }
-
-
-
 
 
 
@@ -412,13 +463,15 @@ body {
 /* Projects */ 
 
 .project-container {
-  background-color: dodgerblue;
-  color: indigo;
+  color: #333;
+  background-image: url("./images/brick-white.jpg");
+  background-size: cover;
 }
 
 #projects{
     font-size: 50px;
     font-weight: bold;
+    // text-shadow: 1px 3px 5px rgba(10,10,10,1);
 }
 
 .projects{
@@ -461,37 +514,6 @@ border-radius: 5px 5px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.card-menu{
-    width: 75px;
-    background-color: navy;
-    opacity: .85;
-    color: gold;
-}
-.card-menu a{
-  opacity: 1;
-}
-
-.card-menu:hover{
-  opacity: 1;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.card-btn{
-    width: 100px;
-    background-color: navy;
-    opacity: .85;
-    color: gold;
-}
-.card-btn a{
-  opacity: 1;
-}
-
-.card-btn:hover{
-  opacity: 1;
-  background-color: deepskyblue;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
 .colom-list{
     list-style: none;
     margin-left: -40px;    
@@ -505,9 +527,49 @@ border-radius: 5px 5px;
 .card-medium{
     width: 400px;
     text-align: center;
-    margin: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .card-medium a{
   color: black;
+}
+
+.card-menu{
+    width: 75px;
+    background-color: black;
+    opacity: .85;
+    color: lightsteelblue;
+}
+.card-menu a{
+  opacity: 1;
+}
+
+.card-menu:hover{
+  opacity: 1;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-btn{
+    width: 100px;
+    background-color: black;
+    opacity: .85;
+    color: lightsteelblue;
+}
+
+.card-btn a{
+  opacity: 1;
+}
+
+.card-btn:hover{
+  opacity: 1;
+  background-color: #333;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.contactHeader{
+  margin-bottom: 40px;
 }
