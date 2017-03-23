@@ -82,7 +82,6 @@ body {
 }
 .cover-container {
   margin-right: auto;
-  margin-left: 5%;
   
 }
 
@@ -137,6 +136,12 @@ body {
 .masthead-nav > .active > a:focus {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+@media (min-width: 992px) {
+  .masthead, .cover-container {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -231,24 +236,17 @@ body {
     border-radius:20%;
     width: 40px;
 }
-.linkedin:hover{
-  width:45px;
-}
+
 .github{
     background-color: white;
     border-radius:20%;
     width: 40px;
 }
-.github:hover{
-  width:45px;
-}
+
 .email{
     border-radius:20%;
     width: 40px;
-}
-.email:hover{
-  width: 42px;
-}
+
     
 
 
