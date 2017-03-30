@@ -1,23 +1,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
-    <!-- Latest compiled and minified CSS -->
+    <title>Chris Grindereng</title>
+<!-- StyleSheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet" />
     <link rel="preload" href="./images/IMG_0398.JPG" as="image">
 </head>
 <body>
-    <!--Nav bar and Home banner-->
+<!--Nav bar, Home banner, fixed side buttons-->
     <div class="site-wrapper">
-        <!--<img src="./images/background.jpg"/>-->
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                
-                <!--NavBar-->
+        <div id="home" class="site-wrapper-inner">
+            <div class="cover-container">    
+            <!--NavBar-->
                 <div class="masthead clearfix navbar-shrink">
                     <div class="inner">
-                        <h3 class="masthead-brand" style="font-style: italic;">Chris Grindereng</h3>
+                    <!--Name/Brand-->   
+                        <h3 class="masthead-brand" style="font-style: italic;"><a  href="#home">Chris Grindereng</a></h3>
                         <nav>
+                    <!--NavBar Menu buttons-->   
                             <ul class="nav masthead-nav">
                                 <li ><a class="card card-menu" href="#home">Home</a></li>
                                 <li ><a class="card card-menu" href="#about">About</a></li>
@@ -27,30 +27,34 @@
                         </nav>
                     </div>
                 </div>
-                <!--Home Banner-->
-                <div id="home" class="inner cover">
+            <!--Home Banner-->
+                <div class="inner cover">
                     <h1 class="cover">LET'S EXPLORE</h1>
                     <p class="cover"></p>
                     <p ><a class="card card-menu card-btn" href="#about" role="button">Learn more</a></p>
                 </div>
-                <!--Fixed footer Icons-->
+            <!--Fixed footer Icons-->
                 <div class="mastfoot">
                     <div class="inner">
+                    <!--Resume-->
                         <p>
                             <a href="./Resume.pdf">
                                 <img class="github" src="http://www.freeiconspng.com/uploads/document-icon-9.png" />
                             </a>
                         </p>
+                    <!--GitHub-->
                         <p>
                             <a href="https://github.com/ChrisGrindereng">
                                 <img class="github"src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" />
                             </a>
                         </p>
+                    <!--LinkedIn-->
                         <p>
                             <a href="https://www.linkedin.com/in/chrisgrindereng">
                                 <img class ="github" src="http://www.myiconfinder.com/uploads/iconsets/3c9eaa4c8dd944eade4d976497f7c5e9.png" />
                             </a>
                         </p>
+                    <!--email-->
                         <p>
                             <a href="mailto:chris.grindereng@gmail.com">
                                 <img class="email" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqfoYM4BlDyAZNvyHcF2ZF4typCq6y_qqEYjN28hXzQYCEjruq" />
@@ -61,7 +65,7 @@
             </div>
         </div>
     </div>
-    <!--About Me Section-->
+<!--About Me Section-->
     <div class="jumbotron">
         <div class="container">
             <h1 id="about">Chris Grindereng | Software Developer</h1>
@@ -70,14 +74,8 @@
             <p id="description">Originally from Denver, I recently moved to Houston with my fiancée. Beyond my interest in tech, I enjoy the outdoors being an avid hiker, rock climber, and skier. I enjoy experimenting in the kitchen at home and experiencing the abundance of ethnic foods in this diverse city. I love to travel and hope to make my way around the world.</p>    
         </div>
     </div>
-    <!--<div class="skills">
-        <div class="container">
-            <p class="descriptionHead">My experience includes such technologies, languages, and frameworks as:</p>
-            <p class="description">•󠆾 C# ASP.Net   • .Net Core   • MVC   • REST Web API   • SOAP XML   • JSON   • SQL   • PostgreSQL   • LINQ   • Entity Framework   • Visual Studio   • Power Shell/Bash   • JavaScript   • React   • AngularJS   • jQuery   • CSS   • HTML </p>
-        </div>
-    </div>-->
 
-<!--Quotes-->
+<!--My Experience Header-->
     <div class="container quote-carousel-container">
         <div class="row">
         <div class='col-md-offset-2 col-md-8 text-center'>
@@ -85,18 +83,18 @@
         </div>
         </div>
     <div class="row ">
-    <!--Quotes-->
+<!--Skills Carousel-->
     <div class='col-md-offset-2 col-md-8'>
       <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-        <!-- Bottom Carousel Indicators -->
+    <!-- Bottom Carousel Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
           <li data-target="#quote-carousel" data-slide-to="1"></li>
           <li data-target="#quote-carousel" data-slide-to="2"></li>
         </ol>
-        <!-- Carousel Slides / Quotes -->
+    <!-- Carousel Slides / Skills -->
         <div class="carousel-inner">
-          <!-- Quote 1 -->
+    <!-- Technologies -->
           <div class="item active">
             <blockquote>
               <div class="row">
@@ -111,7 +109,7 @@
               </div>
             </blockquote>
           </div>
-          <!-- Quote 2 -->
+    <!-- Languages -->
           <div class="item">
             <blockquote>
               <div class="row">
@@ -126,7 +124,7 @@
               </div>
             </blockquote>
           </div>
-          <!-- Quote 3 -->
+    <!-- Frameworks -->
           <div class="item">
             <blockquote>
               <div class="row">
@@ -149,22 +147,25 @@
     </div>
     </div>
     </div>
-<!--Skills Section-->
+<!--Services Section 3 coloms w/ icons-->
     <div class="services">
         <div class="container">
             <h1 id="serviceshead">My Services</h1>
             <!--Row of columns -->
             <div class="row">
+                <!--Backend-->
                 <div class="col-md-4 skill-colom">
                     <img class="skillsIconData" src="http://plainicon.com/download-icons/48703/plainicon.com-48703-cd98-256px.png" />
                     <h2 class="skillType" >Back-End Programmer</h2>                    
                         <p class="skill">I'm trained in programming back-end C# applications, APIs, and databases using SQL Server and LINQ.</p>
                 </div>
+                <!--Frontend-->
                 <div class="col-md-4 skill-colom">
                     <img class="skillsIcons" src="http://cv.valkon-dev.fr/images/icon_62495.png" />
                     <h2 class="skillType">Front-End Developer</h2> 
                         <p class="skill">I'm experienced with designing web applications using JavaScript, jQuery, React, and C# ASP.NET MVC.</p>
                 </div>     
+                <!--Tech Geek--> 
                 <div class="col-md-4">
                     <img class="skillsIcons" src="http://competitiveanalytics.com/wp-content/uploads/2016/07/computer-settings-interface-symbol-of-a-monitor-screen-with-gears.png" />
                     <h2 class="skillType">Technology Geek</h2>
@@ -205,7 +206,7 @@
                     </div>
                 </a>
             </div>
-        <!--Solar Payment Portal-->
+    <!--Solar Payment Portal-->
             <div class="card card-medium card-2">
                 <a href="https://github.com/ChrisGrindereng/Solar-Payment-Portal">
                     <img class="card-img-top" src="./images/SolarPP_Financing.png" />
@@ -223,7 +224,7 @@
                     </div>
                 </a>
             </div>
-        <!--GitHub-->
+    <!--GitHub-->
             <div class="card card-medium card-2">
                 <a href="https://github.com/ChrisGrindereng">
                     <img class="card-img-top" src="./images/GitHub.png" />
@@ -260,19 +261,20 @@
                 <h2 id="contact"></h2>
                 <p><a class="bttmIcons" href="mailto:chris.grindereng@gmail.com"><img class="bttmIcons" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqfoYM4BlDyAZNvyHcF2ZF4typCq6y_qqEYjN28hXzQYCEjruq" /></a></p>
             </div>
-            </div>  
+        </div>  
+        <!--Phone Number-->
             <div class="phone">
                 <a href="tel:303-717-9282"><img src="http://simpleicon.com/wp-content/uploads/phone-volume.png"/>303-717-9282</a>
             </div>     
-        </div>
-    
+    </div>  
     <hr/>
-    <!--Footer-->
+<!--Footer-->
     <footer>
         <p style="color: white;">&copy;2017 All Rights Reserved</p>
     </footer>
     </div>         
 
+<!--Scripts-->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
